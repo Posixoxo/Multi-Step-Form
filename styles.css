@@ -1,0 +1,884 @@
+body{
+background-color: hsl(218, 100%, 97%);
+margin: 0;
+padding: 0;
+font-family: "Ubuntu", sans-serif;
+}
+
+/* Make every page fill the viewport */
+body, html {
+  height: 100%;
+}
+
+header{
+    background-image: url(assets/images/bg-sidebar-mobile.svg); 
+    height: 170px;
+    width: 100%;
+    background-size: cover;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding-top: 30px;
+}
+
+.navbar div{
+    color: hsl(0, 100%, 100%);
+}
+
+.btn{
+    border: 1px solid hsl(0, 100%, 100%);
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    align-items:  center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    background: none;
+    color: hsl(0, 100%, 100%);
+    font-weight: 600;
+}
+
+.btn:active{
+    background-color: hsl(206, 94%, 87%);
+    border: 1px solid hsl(206, 94%, 87%);
+    color: hsl(213, 96%, 18%);
+    font-weight: 600;
+}
+
+/* Layout container that keeps buttons at the bottom */
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+.form-container{
+    background-color: hsl(0, 100%, 100%);
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    margin: -72px 15px 20px 15px;
+    padding: 5px 20px 20px 20px;
+}
+
+.form{
+    text-align: left;
+}
+
+.form h2{
+    color: hsl(213, 96%, 18%);
+    margin-bottom: 0;
+}
+
+.form p{
+    color: hsl(231, 11%, 63%);
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+.form label{
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 2px;
+    color: hsl(213, 96%, 18%);
+    font-size: 13px;
+}
+
+.form input{
+    width: 90%;
+    padding: 10px;
+    border: 1px solid hsl(229, 24%, 87%);
+    border-radius: 5px;
+    font-size: 14px;
+    color: hsl(231, 11%, 63%);
+}
+
+.butt{
+    background-color: hsl(0, 100%, 100%);
+    padding: 10px;
+    margin: 100px 0 0 0;
+    height: 48px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.butt button{
+    background-color: hsl(213, 96%, 18%);
+    border: 1px solid transparent;
+    border-radius: 3px;
+    color: hsl(206, 94%, 87%);
+    margin: 6px 3px;
+    width: 90px;
+    height: 36px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+
+
+
+/*........ select.html styles ........*/
+
+.container{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid hsl(231, 11%, 63%);
+    border-radius: 10px;
+    margin: 15px auto;
+    height: 70px;
+    gap: 12px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.container:active{
+    border: 1px solid hsl(228, 100%, 84%);
+    background-color: hsl(231, 100%, 99%);
+}
+
+.container:hover {
+    border-color: hsl(243, 100%, 62%);
+    background-color: hsl(231, 100%, 99%);
+}
+
+.container.selected {
+    border-color: hsl(243, 100%, 62%);
+    background-color: hsl(231, 100%, 99%);
+}
+
+.img-x{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: 40px;
+}
+
+.cont{
+    display: flex;
+    flex-direction: column;
+    margin: 3px 0 0 0;
+    line-height: 0;
+}
+
+.cont h4{
+    color: hsl(213, 96%, 18%);
+    font-size: 15px;
+}
+
+.cont p{
+    margin: 0;
+    color: hsl(231, 11%, 63%);
+    font-size: 13px;
+}
+
+.free-months {
+    color: hsl(213, 96%, 18%);
+    font-size: 12px;
+    margin-top: 5px;
+    display: none;
+}
+
+.price {
+    display: block;
+    margin-bottom: 4px;
+  }
+  
+
+.mini-container{
+    border: 1px solid transparent;
+    background: hsl(231, 100%, 99%);
+    border-radius: 8px;
+    margin: 6px 0;
+    padding: 10px 0;
+}
+
+.mon-year{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    gap: 15px; 
+    padding: 10px;
+}
+
+.mon-year p{
+    color: hsl(231, 11%, 63%);
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+}
+
+.mon-year p.active {
+    color: hsl(213, 96%, 18%);
+}
+
+.toggle {
+    position: relative;
+    width: 39px;
+    height: 15px;
+    margin: 0;
+    cursor: pointer;
+    padding: 0;
+}
+  
+  .toggle input {
+    display: none;
+  }
+
+  .toggle label {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    background: hsl(213, 96%, 18%);
+    border-radius: 25px;
+    inset: 0;
+    transition: 0.3s;
+    height: 15px;
+    width: 39px;
+  }
+  
+  .slider::before {
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    left: 3px;
+    top: 2.5px;
+    background: white;
+    border-radius: 50%;
+    transition: 0.3s;
+  }
+  
+  input:checked + .slider {
+    background: hsl(213, 96%, 18%);
+  }
+  
+  input:checked + .slider::before {
+    transform: translateX(24px);
+  }
+
+  .butt-2{
+    background-color: hsl(0, 100%, 100%);
+    padding: 10px;
+    margin: 100px 0 0 0;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.butt-2 a{
+    text-decoration: none;
+    color: hsl(231, 11%, 63%);
+    font-size: 13px;
+    align-self: center;
+}
+
+.butt-2 a:hover{
+    color: hsl(213, 96%, 18%);
+}
+
+.butt-2 button{
+    background-color: hsl(213, 96%, 18%);
+    border: 1px solid transparent;
+    border-radius: 3px;
+    color: hsl(206, 94%, 87%);
+    margin: 6px 3px;
+    width: 90px;
+    height: 36px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.butt button:hover {
+    opacity: 0.9;
+}
+
+
+/*......... Pick ad-ons styles .........*/
+.add-ons{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid hsl(231, 11%, 63%);
+    border-radius: 10px;
+    margin: 15px auto;
+    height: 70px;
+    gap: 12px;
+    padding: 10px;
+    color: hsl(231, 11%, 63%);
+    cursor: pointer;
+}
+
+.add-ons:hover {
+    border-color: hsl(243, 100%, 62%);
+    background-color: hsl(231, 100%, 99%);
+}
+
+.add-ons.selected {
+    border-color: hsl(243, 100%, 62%);
+    background-color: hsl(231, 100%, 99%);
+}
+
+.add-ons input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid hsl(231, 11%, 63%);
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    flex-shrink: 0;
+    transition: all 0.2s ease;
+}
+
+.add-ons input[type="checkbox"]:checked {
+    background-color: hsl(243, 100%, 62%);
+    border-color: hsl(243, 100%, 62%);
+}
+
+.add-ons input[type="checkbox"]:checked::after {
+    content: "✓";
+    position: absolute;
+    color: white;
+    font-size: 14px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.cont-2{
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+    text-align: left;
+}
+
+.cont-2 h4{
+    color: hsl(213, 96%, 18%);
+    font-size: 15px;
+    margin: 0;
+}
+
+.cont-2 p{
+    margin: 2px 0 0 0;
+    color: hsl(231, 11%, 63%);
+    font-size: 12px;
+}
+
+.add-ons span{
+    color: hsl(243, 100%, 62%);
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: auto;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+
+
+/*......... Finishing up styles .........*/
+.summary-box{
+    background-color: hsl(231, 100%, 99%);
+    border: 1px solid transparent;
+    border-radius: 10px;
+    margin: 15px auto;
+    padding: 10px;
+}
+
+.summary{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.summary span{
+    font-weight: 600;
+    color: hsl(213, 96%, 18%);
+    font-size: 15px;
+}
+
+.plan-summary{
+    display: flex;
+    flex-direction: column;
+}
+
+.plan-summary h4{
+    color: hsl(213, 96%, 18%);
+    margin: 0;
+    font-size: 15px;
+}
+
+.plan-summary a{
+    color: hsl(231, 11%, 63%);
+    font-size: 15px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.plan-summary a:hover{
+    color: hsl(243, 100%, 62%);
+}
+
+.addons-summary{
+    border: 0.1px solid hsl(231, 11%, 63%);
+    margin: 12px auto;
+}
+
+.group-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.group-1 p{
+    color: hsl(231, 11%, 63%);
+    margin: 0 0 12px 0;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.group-1 span{
+    color: hsl(213, 96%, 18%);
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+.total{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px auto;
+    padding: 10px;
+}
+
+.total p{
+    color: hsl(231, 11%, 63%);
+    font-size: 14px;
+    margin: 0;
+}
+
+.total span{
+    font-weight: 700;
+    color: hsl(243, 100%, 62%);
+    font-size: 15px;
+}
+
+.butt-3{
+    background-color: hsl(0, 100%, 100%);
+    padding: 10px;
+    margin: 100px 0 0 0;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.butt-3 a{
+    text-decoration: none;
+    color: hsl(231, 11%, 63%);
+    font-size: 13px;
+    align-self: center;
+}
+
+.butt-3 button{
+    background-color: hsl(243, 100%, 62%);
+    border: 1px solid transparent;
+    border-radius: 3px;
+    color: hsl(228, 100%, 84%);
+    margin: 6px 3px;
+    width: 90px;
+    height: 36px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.butt-3 a:hover{
+    color: hsl(243, 100%, 62%);
+  }
+
+
+  .butt-3 button:hover{
+    color:  hsl(0, 100%, 100%);
+    background-color:  hsl(243, 100%, 62%);
+    opacity: 0.5px;
+    text-decoration: none;
+  }
+
+
+/*......... Thank you styles .........*/
+
+.mid{
+    text-align: center;
+    margin-top: 50px;
+    justify-items: center;
+    align-items: center;
+}
+
+.img-check{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: 50px;
+    margin: 0 auto;
+}
+
+.mid h3{
+    color: hsl(213, 96%, 18%);
+    font-size: 22px;
+    margin-bottom: 0;
+}
+
+.mid p{
+    color: hsl(231, 11%, 63%);
+    font-size: 17px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+
+
+/* ---------- script.js helper styles ---------- */
+
+/* persistent active state for navbar buttons */
+.btn.active {
+    background-color: hsl(206, 94%, 87%);
+    border-color: hsl(206, 94%, 87%);
+    color: hsl(213, 96%, 18%);
+  }
+  
+  /* Reserve space for "2 months free" to prevent layout jump.
+     .free-months is always present but hidden; .free-months.visible reveals it without shifting layout.
+  */
+  .free-months {
+    /* reserve small height (approx line-height), but keep invisible by default */
+    display: block;
+    height: 16px;
+    line-height: 16px;
+    font-size: 12px;
+    color: hsl(213, 96%, 18%);
+    opacity: 0;
+    transform: translateY(-4px);
+    transition: opacity 0.18s ease, transform 0.18s ease;
+    visibility: hidden;
+  }
+  
+  /* When we want to show the copy for yearly */
+  .free-months.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    margin-top: 8px; 
+    color: hsl(213, 96%, 18%);
+  }
+  
+  /* Add-ons: make sure checkmark text centering works across browsers */
+  .add-ons input[type="checkbox"] {
+    position: relative;
+  }
+
+  .container.selected, .add-ons.selected {
+    border-color: hsl(243, 100%, 62%);
+    background-color: hsl(231, 100%, 99%);
+  }
+  
+  /* Small accessibility focus outlines for keyboard users */
+  .container:focus, .add-ons:focus, .btn:focus {
+    outline: 3px solid rgba(36, 99, 235, 0.12);
+    outline-offset: 2px;
+  }
+
+
+  .mobile-version{
+    display: block;
+  }
+
+  .desktop-version{
+    display: none;
+  }
+
+
+
+
+  @media (max-width: 1023px) {
+    section {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  
+    .butt,
+    .butt-1,
+    .butt-2,
+    .butt-3 {
+      margin-top: auto;
+    }
+  }
+
+
+
+
+  @media (min-width: 1024px) {
+
+    .mobile-version { display: none; }
+
+    .desktop-version {
+        display: block;
+        max-width: 1110px;
+        margin: 0 auto;
+        padding-bottom: 50px;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* SIDEBAR / HEADER */
+    header{
+        background-image: url(assets/images/bg-sidebar-desktop.svg);
+        background-size: cover; 
+        background-position: top left;
+        width: 260px;
+        height: 550px;
+        border-radius: 10px;
+        margin: 0;
+        padding: 10px;
+     }
+
+    .form-container{
+        display: flex;
+        gap: 90px;
+        padding: 20px;
+        margin-top: 60px;
+        min-height: 550px;
+    }
+
+    /* NAVIGATION */
+    .navbar{
+        display: flex;
+        justify-content: left;
+        align-items: left;
+        margin: 0;
+        padding: 0;
+    }
+
+    .grid{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: left;
+        gap: 32px;  
+        margin: 20px 10px;
+        padding: 10px;
+    }
+
+    .nav-item{
+        display: flex;
+        flex-direction: row;
+        gap: 18px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-item button{
+        margin: 0;
+        padding: 0;
+    }
+
+    .btn{
+        border: 1px solid hsl(0, 100%, 100%);
+        border-radius: 50%;
+        height: 35px;
+        width: 35px;
+        align-items:  center;
+        justify-content: center;
+        text-align: center;
+        cursor: pointer;
+        background: none;
+        color: hsl(0, 100%, 100%);
+        font-weight: 600;
+    }
+
+    .nav-text{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+    }
+
+    .step-number{
+        color: hsl(231, 11%, 63%);
+        font-size: 14px;
+        margin-bottom: 3px;
+    }
+
+    .step-title{
+        font-weight: 600;
+        letter-spacing: 1px;
+        font-size: 15px;
+    }
+
+    /* RIGHT COLUMN */
+    .right-column {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        padding: 24px;
+    }
+
+    .contents {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .form p{
+        margin-bottom: 38px;
+    }
+
+    .form label{
+        margin-bottom: 7px;
+    }
+
+    .form input{
+        margin-bottom: 10px;
+    }
+
+    /* BUTTON AT BOTTOM */
+    .butt {
+        margin-top: auto;
+        padding-top: 20px;
+        padding-right: auto;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+      /* select.html */
+
+    .container{
+        width: 100px;
+        height: 130px;
+        display: flex;
+        flex-direction: column;
+        margin: -3px 0;
+        padding: 19px 15px 0 15px;
+    }
+
+    .img-x{
+        margin: 0;
+        padding-bottom: 10px;
+    }
+
+    .cont{
+        margin: 0;
+        padding: 0;
+    }
+
+    .select-c{
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .mini-container{
+        width: 499px;
+        margin: 19px 0;
+    }
+
+    .butt-2 a:hover{
+        color: hsl(213, 96%, 18%);
+    }
+
+    .mon-year {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;       
+    }
+    
+
+    .mon-year p{
+        padding: 0;
+        margin: 0;
+    }
+
+    .free-months.visible {
+        margin-top: -28px; 
+  }
+
+
+
+  /* pick-add-ons.html */
+
+  .add-ons{
+    margin-top: 0px;  }
+
+  .butt-2 {
+    margin-top: auto;
+}
+
+.cont-2{
+    margin-top: 45px;
+}
+
+
+/*...... finishingup.html ..........*/
+
+  .butt-3 a:hover{
+    color: hsl(243, 100%, 62%);
+  }
+
+  .butt-3{
+    margin-top: auto;
+  }
+
+  .butt-3 button:hover{
+    color:  hsl(0, 100%, 100%);
+    background-color:  hsl(243, 100%, 62%);
+    opacity: 0.5px;
+    text-decoration: none;
+  }
+
+  .total p, span{
+    margin: 0;
+    padding: 0;
+  }
+
+  .group-1 p, span{
+    margin: 0;
+    padding: 0;
+  }
+
+  /*...... thankyou.html .......*/
+
+  .img-check{
+    width: 13%;
+  }
+
+  .mid{
+    margin: 130px 0;
+  }
+
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Young+Serif&display=swap" rel="stylesheet">
+  
+  <title>Multi-step form</title>
+  <script src="https://js.paystack.co/v1/inline.js"></script>
+
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <section class="mobile-version">
+    <header>
+      <nav class="navbar">
+          <div><button class="btn">1</button></div>
+          <div><button class="btn">2</button></div>
+          <div><button class="btn">3</button></div>
+          <div><button class="btn">4</button></div>
+      </nav>
+    </header>
+  
+    <section>
+      <div class="form-container">
+        <form id="multi-step-form" class="form">
+          <!-- Form steps will be dynamically inserted here -->
+           <h2>Personal info</h2>
+           <p>Please provide your name, email address, and phone number.</p>
+  
+            <label for="name">Name</label>
+            <input type="text" placeholder="e.g. Stephen King" required>
+  
+            <label for="email">Email Address</label>
+            <input for="text" placeholder="e.g. stephenking@lorem.com" required>
+  
+            <label for="phone">Phone Number</label>
+            <input type="text" placeholder="e.g. +1 234 567 890" required>
+        </form>
+      </div>
+  
+  
+  
+      <div class="butt">
+        <a href="select.html"><button>Next Step</button></a>
+      </div>
+    </section>
+  </section>
+
+
+
+
+
+
+
+
+  <section class="desktop-version">
+  
+    <section>
+      <div class="form-container">
+        
+        <header>
+          <nav class="navbar">
+
+
+              <div class="grid">
+
+                <div class="nav-item">
+                  <button class="btn">1</button>
+                  <div class="nav-text">
+                    <span class="step-number">STEP 1</span>
+                    <span class="step-title">YOUR INFO</span>
+                </div>
+                </div>
+  
+  
+                  <div class="nav-item">
+                  <button class="btn">2</button>
+                  <div class="nav-text">
+                    <span class="step-number">STEP 2</span>
+                    <span class="step-title">SELECT PLAN</span>
+                </div>
+                </div>
+  
+  
+                <div class="nav-item">
+                  <button class="btn">3</button>
+                  <div class="nav-text">
+                    <span class="step-number">STEP 3</span>
+                    <span class="step-title">ADD-ONS</span>
+                </div>
+                </div>
+  
+  
+                <div class="nav-item">
+                  <button class="btn">4</button>
+                  <div class="nav-text">
+                    <span class="step-number">STEP 4</span>
+                    <span class="step-title">SUMMARY</span>
+                </div>
+                </div>
+                
+              </div>
+
+
+              
+          </nav>
+        </header>
+
+          <div class="right-column">
+            <div class="contents">
+              <form id="multi-step-form" class="form">
+                <!-- Form steps will be dynamically inserted here -->
+                 <h2>Personal info</h2>
+                 <p>Please provide your name, email address, and phone number.</p>
+        
+                  <label for="name">Name</label>
+                  <input type="text" placeholder="e.g. Stephen King">
+        
+                  <label for="email">Email Address</label>
+                  <input for="text" placeholder="e.g. stephenking@lorem.com"></input>
+        
+                  <label for="phone">Phone Number</label>
+                  <input type="text" placeholder="e.g. +1 234 567 890">
+              </form>
+            </div>
+        
+        
+        
+            <div class="butt">
+              <a href="select.html"><button>Next Step</button></a>
+            </div>
+          </div>
+
+        </div>
+
+
+    </section>
+  </section>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
+
