@@ -2,6 +2,11 @@
 // Multi-step form controller for both mobile (.mobile-version) and desktop (.desktop-version).
 // Toggle input IDs in HTML (e.g. toggle3-mobile, toggle3-desktop).
 
+
+document.addEventListener("DOMContentLoaded", () => {
+
+
+
 /* ======================
    Constants & Utilities
    ====================== */
@@ -612,3 +617,5 @@
     const billingNow = load(STORAGE.BILLING, "monthly");
     getRoots().forEach(r => updateBillingUIForRoot(r, billingNow));
   });
+
+});
