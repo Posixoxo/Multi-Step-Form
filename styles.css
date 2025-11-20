@@ -579,7 +579,7 @@ section {
     visibility: hidden;
   }
   
-  /* When we want to show the copy for yearly */
+  /* To show the copy for yearly */
   .free-months.visible {
     opacity: 1;
     visibility: visible;
