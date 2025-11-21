@@ -286,11 +286,13 @@ section {
     color: hsl(213, 96%, 18%);
 }
 
+
 .butt-2 button{
     background-color: hsl(213, 96%, 18%);
     border: 1px solid transparent;
     border-radius: 3px;
     color: hsl(206, 94%, 87%);
+    font-weight: 0;
     margin: 6px 3px;
     width: 90px;
     height: 36px;
