@@ -8,6 +8,8 @@ About
 This is a multi-step subscription payment form integrated with the Paystack API, designed for a smooth and user-friendly transaction experience. Users can navigate through a series of steps to select their subscription, review their choices, and securely complete payment.
 
 
+
+
 Key features include:
 
 Step-by-step transaction flow: Complete each stage of the form sequentially.
@@ -29,6 +31,12 @@ Checks for valid email formatting
 Warns if a step is submitted without a selection
 
 
+
+
+
+
+
+
 Technologies Used
 
 HTML – Structure of the form and page
@@ -36,6 +44,9 @@ HTML – Structure of the form and page
 CSS – Styling, responsive design, and interactive states
 
 JavaScript – Multi-step logic, validation, and Paystack API integration
+
+
+
 
 
 Live Demo / Preview
@@ -51,6 +62,8 @@ Review a complete order summary before confirming
 Replace the GIF link above with your own recorded preview of the form for full effect.
 
 
+
+
 Usage
 
 Clone the repository:
@@ -63,12 +76,16 @@ Open index.html in your browser to test the form locally.
 Update the Paystack API keys in your JavaScript file to enable live transactions.
 
 
+
+
 Folder Structure
 /subscription-payment-form
 ├── index.html          # Main page
 ├── style.css           # Styles and responsive layout
 ├── script.js           # Multi-step logic, validation, and Paystack integration
 └── README.md           # Project documentation
+
+
 
 
 Features in Action
@@ -80,6 +97,8 @@ View a complete summary before confirming
 Responsive design adapts to mobile, tablet, and desktop
 
 Real-time form validation ensures a smooth user experience.
+
+
 
 
 
